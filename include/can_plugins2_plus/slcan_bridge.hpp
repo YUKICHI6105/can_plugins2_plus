@@ -29,7 +29,7 @@ namespace slcan_command
 namespace slcan_bridge
 {
 
-    class SlcanBridge : public rclcpp::Node
+    class SlcanBridge_plus : public rclcpp::Node
     {
     private:
         /////////////Slacan Status///////////////////
@@ -90,7 +90,7 @@ namespace slcan_bridge
         void writeHandler(const boost::system::error_code &error, std::size_t bytes_transferred);
 
     public:
-        SlcanBridge(const rclcpp::NodeOptions &options);
+        SlcanBridge_plus(const rclcpp::NodeOptions &options);
 
         // shutfdown process
         void onShutdown()
